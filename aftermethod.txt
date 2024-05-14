@@ -1,0 +1,5 @@
+@AfterMethod
+public void postSignUp()
+{
+Assert.assertEquals(driver.getCurrentUrl(), "https://www.browserstack.com/users/sign_up");
+}
